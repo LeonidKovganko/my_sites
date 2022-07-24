@@ -1,0 +1,24 @@
+$colorLightGray: #d0d0d0;
+$colorDarkGray: #4F4F4F;
+$colorDarkBrown: #333333;
+$colorWhite: white;
+
+
+:root {
+
+	@media screen and (prefers-color-scheme: light),
+	screen and (prefers-color-scheme: no-preference) {
+		--site-primaryBgColor: #{$colorLightGray};
+		--site-secondaryBgColor: #{$colorDarkGray};
+		--site-primaryTextColor: #{$colorDarkBrown};
+		--site-secondaryTextColor: #{$colorWhite};
+	}
+
+	@media screen and (prefers-color-scheme: dark) {
+		--site-primaryBgColor: #{$colorDarkBrown};
+		--site-secondaryBgColor: #{$colorDarkGray};
+		--site-primaryTextColor: #{$colorLightGray};
+		--site-secondaryTextColor: #{$colorWhite};
+	}
+
+}
